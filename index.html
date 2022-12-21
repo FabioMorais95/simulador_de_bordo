@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./styles/media-query.css">
+    <title>Simulador de bordo</title>
+</head>
+<body>
+    <main>
+        <section class="modal modal-menu">
+            <h1>Bem vindo ao simulador de bordo</h1>
+            <span class="subtitle">Escolha entre seguintes opções</span>
+            <section class="buttons">
+                <button id="accelerate">Acelerar a nave em 5km/s</button>
+                <button id="decelerate">Desacelerar a nave em 5km/s</button>
+                <button id="onboardData">Imprimir dados de bordo</button>
+                <button id="exit">Sair do simulador</button>
+            </section>
+            
+        </section>
+
+        <section class="modal modal-onBoard">
+            <h1>Dados de bordo</h1>
+            <p>Velocidade atual da nave: <span id="currentVelocity"></span></p>
+            <button id="backSimulator">Voltar para simulador</button>
+        </section>
+        <section class="modal exitProgram">
+            <audio src="./sounds/Windchime Drone.mp3" id="audio4"></audio>
+            <h1>Até a próxima visita ao simulador de bordo</h1>
+        </section>
+
+        <audio src="./sounds/Beep Short .mp3" id="audio"></audio>
+        <audio src="./sounds/Winding Alarm Clock.mp3" id="audio2"></audio>
+        <audio src="./sounds/Locked Doorknob Jiggle.mp3" id="audio3"></audio>
+        
+    </main>
+    <script src="./script/js.js"></script>
+</body>
+</html>
